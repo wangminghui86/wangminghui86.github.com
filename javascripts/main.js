@@ -10,7 +10,7 @@
         var gallery = $('#gallery'),
             url;
         $.each(data.contents, function (index, content) {
-			for(var i = 0;i<content.pic.length;i++){
+			for(var i = 0;i<content.pics.length;i++){
 				url = "/photo/" + content.dir + "/" + content.pic[i];
 				$('<a data-gallery="gallery"/>')
                 .append($('<img>').prop('src', url))
