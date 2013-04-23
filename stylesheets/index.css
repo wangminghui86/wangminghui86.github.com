@@ -1,0 +1,66 @@
+﻿
+
+a{
+	color:#000;
+	text-decoration:none;
+}
+
+.telDiv{
+	float:left;
+	font-family: 'Bevan', arial, serif;
+	font-size:50px;
+	line-height:50px;
+	color:#f0f0f0;
+	margin-right:5px;
+	text-transform:uppercase;
+}
+
+.telDiv a{
+	display:block;
+	position:relative;
+	float:left;
+	clear:both;
+	color:#fff;
+}
+
+.telDiv a > span{
+	height:50px;
+	float:left;
+	position:relative;
+	overflow:hidden;
+}
+
+.telDiv a span span{
+	position:absolute;
+	display:block;
+	left:0px;
+	top:0px;
+	text-align:center;
+}
+
+.telDiv a span span.sl-w1{
+	color:#fff;
+	text-shadow:0px 0px 1px #fff;
+	z-index:2;
+}
+
+.telDiv{
+	padding-top:50px;
+	margin:20px;
+	clear:both;
+	display:block;
+}
+.telDiv a{
+	margin:15px;
+}
+#telTitle{
+	font-family:'Bigshot One', arial, serif;
+}
+
+.telDiv a#telTitle span span.sl-w2{
+	color:#fbb1be;
+	text-shadow:0px 2px 1px #e71b70;
+	z-index:3;
+}
+
+
