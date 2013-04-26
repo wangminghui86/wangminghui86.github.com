@@ -16,7 +16,7 @@
                 .append($('<img>').prop('src', "photo/g1/1m.jpg"))
                 .prop('href', url)
                 .prop('title', "title")
-				.prop('width',"200px")
+				.prop('width',"80px")
                 .appendTo(gallery);
 			}
         });
