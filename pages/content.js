@@ -5,20 +5,21 @@
     $('#gallery').imagegallery();
 	
 	$.ajax({
-        url: '../pages/contents.json'
+        url: '../pages/photo/' + picPath + '/contents.json'
     }).done(function (data) {
+		var suf = ".jpg";
         var gallery = $('#gallery'),
             url;
-        $.each(data.contents, function (index, content) {
-			for(var i = 0;i<content.pics.length;i++){
-				url = "photo/" + content.dir + "/" + content.pics[i];
+        $.each(data.pics, function (index, pic) {
+				
+				url = "photo/" + picPath + "/" + pic + suf;
 				$('<a data-gallery="gallery"/>')
-                .append($('<img>').prop('src', "photo/g1/1m.jpg"))
+                .append($('<img>').prop('src', "photo/" + picPath +"/s" + pic + suf))
                 .prop('href', url)
                 .prop('title', "title")
 				.prop('width',"80px")
                 .appendTo(gallery);
-			}
+			
         });
     });
 	
