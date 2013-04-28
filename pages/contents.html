@@ -1,18 +1,43 @@
-<!DOCTYPE HTML>
+ï»¿<!DOCTYPE HTML>
 
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>²é¿´Ïà²á</title>
+<title>ç›¸å†Œ</title>
 <!-- jQuery UI styles -->
 <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/themes/dark-hive/jquery-ui.css" id="theme">
 <!-- jQuery Image Gallery styles -->
 <link rel="stylesheet" href="../javascripts/jQuery-Image-Gallery-master/css/jquery.image-gallery.min.css">
+<style type="text/css">
+a {
+  text-decoration: none;
+  color: #007edf;
+  text-shadow: none;
+  font-size:14px;
+  transition: color 0.5s ease;
+  transition: text-shadow 0.5s ease;
+  -webkit-transition: color 0.5s ease;
+  -webkit-transition: text-shadow 0.5s ease;
+  -moz-transition: color 0.5s ease;
+  -moz-transition: text-shadow 0.5s ease;
+  -o-transition: color 0.5s ease;
+  -o-transition: text-shadow 0.5s ease;
+  -ms-transition: color 0.5s ease;
+  -ms-transition: text-shadow 0.5s ease;
+}
+a:hover {
+  color: #43adff;
+  text-shadow: #0090ff 0px 0px 2px;
+}
+</style>
 </head>
 <body>
-
+<div style="float:right;display:block;padding-right:40px;">
+	<a href="albumlist.html">è¿”å›ž</a>
+</div>
+<br/>
 <!-- The container element for the gallery images -->
-<div id="gallery"></div>
+<center><div id="gallery"></div></center>
 <script type="text/javascript">
 	var picPath =  location.search.substring(1);
 </script>
@@ -24,5 +49,5 @@
 <script src="../javascripts/jQuery-Image-Gallery-master/js/jquery.image-gallery.min.js"></script>
 <!-- The main application script -->
 <script src="content.js"></script>
-</body> 
+</body>
 </html>
