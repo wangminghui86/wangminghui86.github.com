@@ -16,7 +16,7 @@
 				$('<a data-gallery="gallery"/>')
                 .append($('<img>').prop('src', "photo/" + picPath +"/s_" + pic + suf))
                 .prop('href', url)
-                .prop('title', "title")
+                .prop('title', pic + suf)
 				.prop('width',"80px")
                 .appendTo(gallery);
 			
