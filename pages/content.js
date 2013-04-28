@@ -14,7 +14,7 @@
 				
 				url = "photo/" + picPath + "/" + pic + suf;
 				$('<a data-gallery="gallery"/>')
-                .append($('<img>').prop('src', "photo/" + picPath +"/s" + pic + suf))
+                .append($('<img>').prop('src', "photo/" + picPath +"/s_" + pic + suf))
                 .prop('href', url)
                 .prop('title', "title")
 				.prop('width',"80px")
